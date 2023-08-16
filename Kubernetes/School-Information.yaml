@@ -22,11 +22,11 @@ spec:
             - containerPort: 9090
           resources:
             limits:
-              cpu: 50m
-              memory: 30Mi
+              cpu: 500m
+              memory: 500Mi
             requests:
-              cpu: 50m
-              memory: 30Mi
+              cpu: 500m
+              memory: 500Mi
           env:
             - name: REDIS_HOST
               valueFrom:

@@ -22,11 +22,11 @@ spec:
             - containerPort: 9092
           resources:
             limits:
-              cpu: 50m
-              memory: 30Mi
+              cpu: 500m
+              memory: 500Mi
             requests:
-              cpu: 50m
-              memory: 30Mi
+              cpu: 500m
+              memory: 500Mi
 
 ---
 apiVersion: v1
@@ -39,12 +39,12 @@ metadata:
   namespace: school-management
 spec:
   ports:
-    - port: 9090
+    - port: 9092
       protocol: TCP
-      targetPort: 9090
+      targetPort: 9092
   selector:
     app: school-management-main
-  type: NodePort
+  type: ClusterIP
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
