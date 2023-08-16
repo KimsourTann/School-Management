@@ -1,0 +1,29 @@
+# server:
+#   port: 9093
+# spring:
+#   redis:
+#     host: 172.17.1.11
+#     port: 6379
+#   datasource:
+#     driverClassName: com.mysql.cj.jdbc.Driver
+#     url: jdbc:mysql://172.17.1.11:3306/kimsour
+#     username: root
+#     password: admin
+#     jpa:
+#       database-platform: org.hibernate.dialect.MySQLDialect
+# redis-key: SchoolManagement
+server:
+  port: 9093
+spring:
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    # 127.0.0.1:3306/kimsour
+    url: jdbc:mysql://${HOST}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    jpa:
+      database-platform: org.hibernate.dialect.MySQLDialect
+redis-key: SchoolManagement

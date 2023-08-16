@@ -1,0 +1,6 @@
+server:
+  port: 9092
+school-information: http://school-information-svc.school-management.svc.cluster.local:9090/SchoolManagemnt/v1/
+school-payment: http://school-payment-svc.school-management.svc.cluster.local:9093/SchoolManagemnt/v1/
+# school-information: http://localhost:9090/SchoolManagemnt/v1/
+# school-payment: http://localhost:9093/SchoolManagemnt/v1/
